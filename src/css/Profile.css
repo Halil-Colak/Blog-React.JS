@@ -1,0 +1,67 @@
+#profil-container-section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+#profil-container {}
+
+#profil-container>div:first-of-type {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+#profil-container>div:first-of-type>img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+#profil-container>div:first-of-type>p {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+#profil-container>div:first-of-type>p>span {
+    font-size: 13px;
+}
+
+#profil-container>div:first-of-type>span {
+    position: absolute;
+    right: 0;
+    font-size: 12px;
+}
+
+#profil-link {
+    margin-top: 1rem;
+    display: flex;
+    gap: 0.6rem;
+    border-bottom: var(--border);
+    padding-bottom: 1rem;
+}
+
+#profil-link>a.active {
+    background-color: var(--blue);
+    color: var(--white);
+}
+
+.comment-box .comment-html-prew {
+    font-size: 12px;
+}
+
+.profile-comment-box>div {
+    background: var(--bg);
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+.profile-comment-box>.blog-cart {
+    border: 0;
+}
