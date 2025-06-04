@@ -19,11 +19,6 @@ function Blog({ blog }) {
                         {blog.author.name + " " + blog.author.surname}
                     </p>
                 </div>
-                {/* <div>
-                    {blog.categories && blog.categories.map((ct) => {
-                        return <span className='category-tag' key={ct.slug}>{ct.name}</span>
-                        })}
-                        </div> */}
                 <h5>{blog.title}</h5>
                 <p>{blog.description}</p>
                 <span className='blog-dc-box'>

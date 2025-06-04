@@ -29,7 +29,6 @@ function BlogDetail() {
         hljs.highlightAll();
     }, []);
 
-    //blog içeriğinı amak ıcın
     useEffect(() => {
         setLoading(true);
         const Retrieve = async () => {
@@ -40,7 +39,6 @@ function BlogDetail() {
         }
         Retrieve();
     }, [blogSlug]);
-    //Kullanıcı daha once begenmıs mı kontroolu
     useEffect(() => {
         if (isAuthenticated) {
             const Retrieve = async () => {

@@ -20,10 +20,9 @@ function Header() {
   const [isOpen, setIsOpen] = useState(false);
   const [loading, setloading] = useState(false);
 
-  const dropdownRef = useRef(null); // dropdown div'i
-  const toggleButtonRef = useRef(null); // toggle butonu (HiDotsVertical)
+  const dropdownRef = useRef(null); 
+  const toggleButtonRef = useRef(null); 
 
-  //#region Random Blog
   const Retrieve = async () => {
     setloading(true)
     try {
@@ -37,7 +36,6 @@ function Header() {
     }
   };
 
-  //#endregion 
 
   const Toogle = () => {
     setIsOpen(prev => !prev);

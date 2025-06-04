@@ -11,7 +11,7 @@ import CustomerBlogComment from './component/CustomerBlogComment';
 import CustomerBlogLike from './component/CustomerBlogLike';
 import Profile from './page/Profile';
 import ProfileUpdate from './page/ProfileUpdate';
-import ConfirmEmail from './page/ConfirmEmail';  // ConfirmEmail sayfasını import ediyoruz
+import ConfirmEmail from './page/ConfirmEmail';
 import ForgotPassword from './page/ForgotPassword';
 import ResetPassword from './page/ResetPassword';
 import NotFound from './page/NotFound';

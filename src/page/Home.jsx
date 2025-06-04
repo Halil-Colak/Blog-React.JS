@@ -12,17 +12,6 @@ function Home() {
 
     return (
         <>
-
-            {/* <Helmet>
-                <title>Ana Sayfa | Halil'in Blogu</title>
-                <meta name="description" content="Halil'in blogunun ana sayfası." />
-                <meta name="keywords" content="blog, halil, react, seo" />
-                <meta property="og:title" content="Ana Sayfa | Halil'in Blogu" />
-                <meta property="og:description" content="Halil'in blogunun ana sayfası." />
-                <meta property="og:image" content="https://halil-blog.com/gorsel.jpg" />
-                <meta property="og:url" content="https://halil-blog.com" />
-            </Helmet> */}
-
             <section id="catagory-container">
                 {isAuthenticated ? (
                     <h1>Hoşgeldin {user.name} {user.surnName} 🎉</h1>

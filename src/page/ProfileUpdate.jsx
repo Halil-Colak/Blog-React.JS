@@ -14,7 +14,6 @@ function ProfileUpdate() {
     const navigate = useNavigate();
     const { showAlert } = useAlert();
 
-    // State tanımlamaları
     const [name, setName] = useState();
     const [surName, setSurName] = useState();
     const [email, setEmail] = useState();
@@ -24,14 +23,13 @@ function ProfileUpdate() {
 
 
 
-    // Form submit işlemi
     const handleSubmit = async (e) => {
         e.preventDefault();
         const formData = new FormData();
-        formData.append('name', name); // Name input değeri
-        formData.append('surName', surName); // SurName input değeri
-        formData.append('email', email); // Email input değeri
-        formData.append('photo', photo); // Fotoğraf var mı kontrolü ve ekleme
+        formData.append('name', name); 
+        formData.append('surName', surName);
+        formData.append('email', email); 
+        formData.append('photo', photo); 
         setLoading(true);
 
         const response = await CustomerService.Update(formData);
@@ -48,11 +46,11 @@ function ProfileUpdate() {
         }
     };
 
-    // Müşteri verisini çek
+  
     useEffect(() => {
         if (!isAuthenticated || !user) return;
 
-        // Slug uyuşmuyorsa yönlendir
+     
         if (user.slug !== customerSlug) {
             showAlert("Bu profili düzenlemeye yetkin yok! Uza!", false);
             navigate('/');

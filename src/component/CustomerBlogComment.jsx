@@ -60,14 +60,6 @@ function CustomerBlogComment() {
             )}
             {data.map((blog, index) => (
                 <Link to={`/blog-detay/${blog.slug}`} className='profile-comment-box' key={index}>
-                    {/* <div>
-                        <div>
-                            <h5>{blog.title}</h5>
-                            <p>{blog.description}</p>
-                        </div>
-                        <img src={import.meta.env.VITE_API_IMAGE_URL + blog.imageUrl} alt="" loading='lazy' width={50} />
-                    </div> */}
-
                     <Blog blog={blog} />
                     <div>
                         {blog.comments.map((comment, i) => {

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { useAlert } from '../helper/AlertProvider';  // Alert provider
+import { useAlert } from '../helper/AlertProvider'; 
 import AuthService from '../services/AuthService';
 import "../css/Auth.css";
 import Loading from '../component/Loading';
